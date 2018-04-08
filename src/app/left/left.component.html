@@ -1,0 +1,11 @@
+<div id = "left">
+<p>
+  left works!
+</p>
+  <button (click) = "displayheaderdiv()">Display Header</button><br/>
+  <button (click) = "displayfooterdiv()">Display Footer</button><br/>
+  <button (click) = "displayleftdiv()">Display Left</button><br/>
+  <button  (click) = " displayrightdiv()">Display Right</button><br/>
+  <button (click) = "displaybodydiv()">Display Body</button><br/>
+  <div [style.display] = "leftData ? 'block':'none'" id ="test-div-left"></div>
+</div>

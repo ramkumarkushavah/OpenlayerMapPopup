@@ -1,0 +1,47 @@
+/* #main{
+    height: 100%;
+    width: 100%;
+    background-color: blueviolet;
+    position: absolute;
+    left: 1px;
+    top: 1px;
+} */
+#main-header{
+    height: 50px;
+    width: 100%;
+    position: absolute;
+    background-color: blue;
+    top: 0px;
+    right: 0px;   
+}
+#main-footer{
+    height: 50px;
+    width: 100%;
+    position: absolute;
+    background-color: red;
+    bottom: 0px;
+    right: 0px; 
+}
+#main-left{
+    position: absolute;
+    top: 54px;
+    height: 652px;
+    width: 200px;
+    background-color: pink;
+}
+#main-right{
+    position: absolute;
+    top: 54px;
+    height: 652px;
+    width: 216px;
+    right: 0px;
+    background-color:gray;
+}
+#main-body{
+    position: absolute;
+    top: 54px;
+    height: 652px;
+    width: 1113px;
+    left: 203px;
+    
+}

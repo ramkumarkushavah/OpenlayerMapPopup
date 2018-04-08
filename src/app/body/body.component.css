@@ -1,0 +1,20 @@
+
+#test-div-body{
+    height: 50px;
+    width: 50px;
+    background-color: deeppink;
+    position: absolute;
+    z-index: 1;
+}
+#setting{
+    height: 200px;
+    width: 500px;
+    background-color: brown;
+    display: none;
+}
+/* #asset-fabric{
+    display: none;
+} */
+#login{
+    /* display: none; */
+}

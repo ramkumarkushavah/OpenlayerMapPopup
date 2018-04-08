@@ -1,0 +1,27 @@
+<div id = "main">
+  Wecome to App Component...!!!<br/>
+  <div id = "main-header">
+    <app-header #headerData  [assetInstance]="assetData"></app-header>
+    <!-- First Time #data = false -->
+    <!-- Data is going to [headerInstance] = "data" At the time of First time component loading-->
+    
+  </div>
+
+  <div id = "main-footer">
+    <app-footer #footerData></app-footer>
+  </div>
+
+  <div id = "main-left">
+    <app-left [headerInstance]="headerData" [rightInstance]="rightData" [footerInstance]="footerData" [bodyInstance] = "bodyData"></app-left>
+    <!-- data is coming from the  '<app-header #data ></app-header>' -->
+  </div> 
+
+  <div id = "main-right">
+    <app-right #rightData></app-right>
+  </div>
+
+  <div id = "main-body">
+    <app-body #bodyData ></app-body>
+    <!-- <app-assetfabric #assetData></app-assetfabric> -->
+  </div>
+</div>

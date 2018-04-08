@@ -1,0 +1,5 @@
+{
+  "globalDependencies": {
+    "openlayers": "registry:dt/openlayers#4.0.1+20170310052621"
+  }
+}

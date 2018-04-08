@@ -1,0 +1,30 @@
+<div id="header">
+    <!-- if data value is true then display:block and if data value is false the display:none -->
+    <p>Header</p>
+    <br/>
+    <div [style.display]="data ? 'block' : 'none'" id="test-div-header"></div>
+    <!-- All Pages Start -->
+    <div id="header-button">
+        <button class="ui red button" (click) = "asset()" routerLink="/asset" routerLinkActive="active">Asset</button>
+        <button class="ui orange button" (click) = "login()" routerLink="/login" routerLinkActive="active">LogIn</button>
+        <button class="ui orange button" (click) = "assetSetting()" routerLink="/assetSetting" routerLinkActive="active">A-Setting</button>
+        <button class="ui orange button" (click) = "restful()" routerLink="/restful" routerLinkActive="active">Restful</button>
+        <button class="ui orange button" (click) = "sqlData()" routerLink="/sqlData" routerLinkActive="active">sqlData</button>
+        
+        
+        
+        <!-- <button class="ui yellow button">Yellow</button> 
+        <button class="ui olive button">Olive</button>
+        <button class="ui green button">Green</button>
+        <button class="ui teal button">Teal</button>
+        <button class="ui blue button">Blue</button>
+        <button class="ui violet button">Violet</button>
+        <button class="ui purple button">Purple</button>
+        <button class="ui pink button">Pink</button>
+        <button class="ui brown button">Brown</button>
+        <button class="ui grey button">Grey</button>
+        <button class="ui black button">Black</button> -->
+    </div>
+    <!-- All Pages Finish -->
+    
+</div>
