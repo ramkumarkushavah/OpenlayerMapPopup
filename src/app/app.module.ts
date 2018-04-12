@@ -3,6 +3,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
+import { FormsModule } from '@angular/forms';
 
 // Custom Component
 import { AppComponent } from './app.component';
@@ -63,7 +64,7 @@ const routes: Routes = [
     SqlDataShowComponent,
   ],
   imports: [
-    BrowserModule, RouterModule.forRoot(routes), HttpModule, HttpClientModule
+    BrowserModule, RouterModule.forRoot(routes), HttpModule, HttpClientModule, FormsModule
   ],
   providers: [CommonService,RestcurdService, SqlDatabaseService],
   bootstrap: [AppComponent]

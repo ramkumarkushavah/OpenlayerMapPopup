@@ -1,5 +1,6 @@
 import { Component, OnInit, AfterViewInit } from '@angular/core';
 import { CommonService } from '../../../services/common.service';
+import { FormsModule } from '@angular/forms';
 
 // declare let ol;
 
@@ -15,6 +16,11 @@ import * as ol from 'openlayers';
 export class AssetfabricComponent implements OnInit, AfterViewInit {
   divTrueFalseA: boolean = false;
   assetData: boolean = true;
+  oildata:string = '';
+  gasdata:string = '';
+
+  A = [ ];
+  B = [ ];
   constructor(public CommonService: CommonService) { 
 
     this.CommonService.commonEmitter.subscribe(divTrueFalse => {
@@ -129,6 +135,19 @@ export class AssetfabricComponent implements OnInit, AfterViewInit {
   });
 
   ///////////Overlay Popup & Event Binding Finish////////////
+  }
+  insert(){
+    console.log(this.oildata);
+    console.log(this.gasdata);
+
+    this.A.push(this.oildata);
+    this.B.push(this.gasdata);
+
+    console.log(this.A);
+    console.log(this.B);
+    
+    this.oildata = null;
+    this.gasdata = null;
   }
 }
 

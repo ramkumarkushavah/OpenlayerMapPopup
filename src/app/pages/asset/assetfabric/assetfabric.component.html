@@ -15,19 +15,73 @@
                 <p>We've grabbed the following image from the <a href="https://www.gravatar.com" target="_blank">gravatar</a>                    image associated with your registered e-mail address.</p>
                 <p>Is it okay to use this photo?</p>
             </div> -->
-            <form class="ui form">
+            <!-- <form class="ui form">
                 <div class="field">
                     <label>First Oil Data</label>
-                    <input type="text" name="first-name" placeholder="Oil Data">
+                    <input type="text" name="oil-data" placeholder="Oil Data"  [(ngModel)]="oildata" >
                 </div>
                 <div class="field">
                     <label>Gas Data</label>
-                    <input type="text" name="last-name" placeholder="Gas Data">
+                    <input type="text" name="gas-data" placeholder="Gas Data"  [(ngModel)]="gasdata"> 
                 </div>
                 <div class="field">
                 </div>
-                <button class="ui red button active" type="submit">Submit</button>
+                <button class="ui red button active" (click)="insert()">Submit</button>
+                
+            </form> -->
+            <form class="ui form">
+                <div class="field">
+                    <label>First Oil Data</label>
+                    <input type="text" name="oil-data" placeholder="Oil Data" [(ngModel)]="oildata">
+                </div>
+                <div class="field">
+                    <label>Gas Data</label>
+                    <input type="text" name="gas-data" placeholder="Gas Data" [(ngModel)]="gasdata">
+                </div>
+                <div class="field">
+                </div>
+                <button class="ui red button active" (click)="insert()">Submit</button>
+
             </form>
+        </div>
+        <div id="fdcdata">
+            <font color = "blue" size = "4px">
+            <table class="ui celled padded table" >
+                <thead>
+                    <tr>
+                        <th>Oil Data</th>
+                        <th>Gas Data</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- <tr>
+                        <td>
+                            <h2 class="ui center aligned header">A</h2>
+                        </td>
+                        <td class="single line">
+                            Power Output
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <h2 class="ui center aligned header">A</h2>
+                        </td>
+                        <td class="single line">
+                            Weight
+                        </td>
+                    </tr> -->
+                    <tr>
+                        <td class="single line"> 
+                            <li *ngFor="let d1 of A;let i=index" border = "1">{{d1}}</li>
+                        </td>
+                        <td class="single line">
+                            <li *ngFor="let d2 of B;let i=index">{{d2}}</li>
+                        </td>
+                    </tr>
+
+                </tbody>
+            </table>
+        </font>
         </div>
     </div>
 </div>

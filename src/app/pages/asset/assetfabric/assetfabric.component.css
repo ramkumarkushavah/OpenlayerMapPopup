@@ -24,7 +24,12 @@
 .ui.modal {
     width: 900px;
     margin: 0em 0em 0em 0em;
-    top: 117px;
+    top: 130px;
     left: 238px;
     position: absolute;
+}
+#fdcdata{
+    position: absolute;
+    height: 100%;
+    width: 100%;
 }
